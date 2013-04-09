@@ -64,8 +64,7 @@
     STAssertFalse([deckTenCards countCardsInDeck] == 0 , @"The Deck is empty");
     STAssertTrue([deckTenCards countCardsInDeck] == 10 , @"The Deck has invalid number of cards");
     // test if cards are in the right order
-    int i=[deckTenCards countCardsInDeck]-1;
-    for (; i>=0; --i) {
+    for (int i= 0; i<[deckTenCards countCardsInDeck]; i++) {
         Cards_Element *selectedCard = [deckTenCards getCardAtIndex:i];
         NSString *sId = [NSString stringWithFormat:@"id_%d",i];
         STAssertTrue([[selectedCard sCardId] isEqualToString:sId], [NSString stringWithFormat:@"The Deck has misplaced cards expected id : %@ retrieved id: %@",[selectedCard sCardId], sId]);
@@ -78,8 +77,7 @@
     STAssertTrue([deckItsOverNineThousandCards countCardsInDeck] == 9001 , @"The Deck has invalid number of cards");
     // test if cards are in the right order
     BOOL everyThingsAreTheSame = YES;
-    i = [deckItsOverNineThousandCards countCardsInDeck]-1;
-    for (; i>=0; --i) {
+    for (int i= 0; i<[deckItsOverNineThousandCards countCardsInDeck]; i++) {
         Cards_Element *selectedCard = [deckItsOverNineThousandCards getCardAtIndex:i];
         NSString *sId = [NSString stringWithFormat:@"id_%d",i];
         if (![[selectedCard sCardId] isEqualToString:sId]) {
