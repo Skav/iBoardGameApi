@@ -53,7 +53,6 @@
 -(BOOL)addCards:(NSArray*)arrCards AtPosition:(NSInteger)placeToInsert{
     for(Cards_Element *card in arrCards){
         [self addCard:card AtPosition:placeToInsert];
-        placeToInsert++;
     }
     return YES;
 }

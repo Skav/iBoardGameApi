@@ -64,12 +64,30 @@
     STAssertFalse([deckTenCards countCardsInDeck] == 0 , @"The Deck is empty");
     STAssertTrue([deckTenCards countCardsInDeck] == 10 , @"The Deck has invalid number of cards");
     // test if cards are in the right order
-    for (int i =0; i<[deckTenCards countCardsInDeck]; i++) {
+    int i=[deckTenCards countCardsInDeck]-1;
+    for (; i>=0; --i) {
         Cards_Element *selectedCard = [deckTenCards getCardAtIndex:i];
         NSString *sId = [NSString stringWithFormat:@"id_%d",i];
-        STAssertTrue([[selectedCard sCardId] isEqualToString:sId], @"The Deck has misplaced cards");
+        STAssertTrue([[selectedCard sCardId] isEqualToString:sId], [NSString stringWithFormat:@"The Deck has misplaced cards expected id : %@ retrieved id: %@",[selectedCard sCardId], sId]);
     }
     
-    
+    cards = [self createArrayOfCards:9001];
+    Cards_Deck *deckItsOverNineThousandCards = [[Cards_Deck alloc] initWithCards:cards Shuffle:YES];
+    STAssertNotNil(deckItsOverNineThousandCards, @"The Deck is nil. Not cool");
+    STAssertFalse([deckItsOverNineThousandCards countCardsInDeck] == 0 , @"The Deck is empty");
+    STAssertTrue([deckItsOverNineThousandCards countCardsInDeck] == 9001 , @"The Deck has invalid number of cards");
+    // test if cards are in the right order
+    BOOL everyThingsAreTheSame = YES;
+    i = [deckItsOverNineThousandCards countCardsInDeck]-1;
+    for (; i>=0; --i) {
+        Cards_Element *selectedCard = [deckItsOverNineThousandCards getCardAtIndex:i];
+        NSString *sId = [NSString stringWithFormat:@"id_%d",i];
+        if (![[selectedCard sCardId] isEqualToString:sId]) {
+            everyThingsAreTheSame = NO;
+        }
+    }
+    STAssertFalse(everyThingsAreTheSame, @"The Deck has not been shuffle");
+
+
 }
 @end
