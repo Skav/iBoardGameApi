@@ -25,12 +25,14 @@
     [super tearDown];
 }
 
--(Cards_Element *)createCard:(NSInteger)iId{
+-(Cards_Element *)createCard:(NSInteger)iId
+{
     NSString *sId = [NSString stringWithFormat:@"id_%d",iId];
     return[[Cards_Element alloc]initWithElementId:sId
                                         andCardId:sId];
 }
--(NSArray *)createArrayOfCards:(NSInteger)numberOfCards{
+-(NSArray *)createArrayOfCards:(NSInteger)numberOfCards
+{
     NSMutableArray *array = [[NSMutableArray alloc]initWithCapacity:numberOfCards];
     for (int i=0; i<numberOfCards; i++) {
        [array addObject:[self createCard:i]];
@@ -67,7 +69,8 @@
     for (int i= 0; i<[deckTenCards countCardsInDeck]; i++) {
         Cards_Element *selectedCard = [deckTenCards getCardAtIndex:i];
         NSString *sId = [NSString stringWithFormat:@"id_%d",i];
-        STAssertTrue([[selectedCard sCardId] isEqualToString:sId], [NSString stringWithFormat:@"The Deck has misplaced cards expected id : %@ retrieved id: %@",[selectedCard sCardId], sId]);
+        NSLog(@"%d",i);
+        STAssertTrue([[selectedCard sCardId] isEqualToString:sId], [NSString stringWithFormat:@"The Deck has misplaced cards expected id : %@ retrieved id: %@", sId,[selectedCard sCardId]]);
     }
     
     cards = [self createArrayOfCards:9001];
@@ -85,7 +88,29 @@
         }
     }
     STAssertFalse(everyThingsAreTheSame, @"The Deck has not been shuffle");
-
-
 }
+
+- (void)testAddCard
+{
+    // Initialisation with a nil array of cards
+    Cards_Deck *deckEmpty = [[Cards_Deck alloc] initWithCards:nil Shuffle:NO];
+    BOOL addCardResult;
+    
+    // try to insert nil card ^.^
+    addCardResult = [deckEmpty addCard:nil];
+    STAssertFalse(addCardResult, @"Wrong result of insertion");
+    
+    // try to insert a card
+    Cards_Element *oneCard = [self createCard:0];
+    addCardResult = [deckEmpty addCard:oneCard];
+    STAssertTrue(addCardResult, @"Wrong result of insertion");
+    STAssertTrue([deckEmpty countCardsInDeck] == 1, @"Invalid number of cards in deck");
+    
+    // try to insert another card
+    Cards_Element *anotherCard = [self createCard:1];
+    addCardResult = [deckEmpty addCard:anotherCard];
+    STAssertTrue(addCardResult, @"Wrong result of insertion");
+    STAssertTrue([deckEmpty countCardsInDeck] == 2, @"Invalid number of cards in deck");
+}
+
 @end

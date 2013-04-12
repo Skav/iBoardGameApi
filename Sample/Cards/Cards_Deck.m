@@ -36,25 +36,36 @@
 
 //Deck Manager
 -(BOOL)addCard:(Cards_Element*)card{
-    [self addCard:card AtPosition:TOP_INDEX];
-    return YES;
+    return [self addCard:card AtPosition:[self countCardsInDeck]];
 }
 -(BOOL)addCards:(NSArray*)arrCards{
+    BOOL insertResult = YES;
     for(Cards_Element *card in arrCards){
-        [self addCard:card];
+        BOOL insertStatementResult = [self addCard:card];
+        if (insertStatementResult == NO) {
+            insertResult = NO;
+        }
     }
-    return true;
+    return insertResult;
 }
 -(BOOL)addCard:(Cards_Element*)card AtPosition:(NSInteger)placeToInsert{
-    [self.indexCards setValue:card forKey: card.sCardId];
-    [self.arrDeck insertObject:card.sCardId atIndex:placeToInsert];
-    return YES;
+    if (card != nil) {
+        [self.indexCards setValue:card forKey: card.sCardId];
+        [self.arrDeck insertObject:card.sCardId atIndex:placeToInsert];
+        return YES;
+    }
+    NSLog(@"Card is nil");
+    return NO;
 }
 -(BOOL)addCards:(NSArray*)arrCards AtPosition:(NSInteger)placeToInsert{
+    BOOL insertResult = YES;
     for(Cards_Element *card in arrCards){
-        [self addCard:card AtPosition:placeToInsert];
+        BOOL insertStatementResult = [self addCard:card AtPosition:placeToInsert];
+        if (insertStatementResult == NO) {
+            insertResult = NO;
+        }
     }
-    return YES;
+    return insertResult;
 }
 
 -(BOOL)removeCard:(Cards_Element*)card{
@@ -95,7 +106,7 @@
 }
 
 //Draw cards ! important Draw cards remove cards
--(Cards_Element*)drawFirstCard{
+-(Cards_Element*)drawTopCard{
     return nil;
 }
 -(NSArray*)drawXCardsFromTop:(NSInteger)iCards{

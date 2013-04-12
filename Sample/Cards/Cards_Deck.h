@@ -40,7 +40,7 @@
 -(NSArray*)showCardsInRange:(NSRange)range;
 
 //Draw cards
--(Cards_Element*)drawFirstCard;
+-(Cards_Element*)drawTopCard;
 -(NSArray*)drawXCardsFromTop:(NSInteger)iCards;
 
 //Get specific Cards

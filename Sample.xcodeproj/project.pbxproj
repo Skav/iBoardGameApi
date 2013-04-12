@@ -28,6 +28,8 @@
 		277E7E6A17133180001E51CA /* Cards_Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 277E7E6917133180001E51CA /* Cards_Deck.m */; };
 		277E7E6E171344B2001E51CA /* NSMutableArray_Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 277E7E6D171344B2001E51CA /* NSMutableArray_Shuffling.m */; };
 		277E7E741713F5B2001E51CA /* TST_Cards_Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 277E7E731713F5B2001E51CA /* TST_Cards_Deck.m */; };
+		277E7E7717189D7D001E51CA /* sonar-project.properties in Resources */ = {isa = PBXBuildFile; fileRef = 277E7E7617189D7C001E51CA /* sonar-project.properties */; };
+		277E7E7917189FB6001E51CA /* pom.xml in Resources */ = {isa = PBXBuildFile; fileRef = 277E7E7817189FB6001E51CA /* pom.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		277E7E6D171344B2001E51CA /* NSMutableArray_Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArray_Shuffling.m; sourceTree = "<group>"; };
 		277E7E721713F5B2001E51CA /* TST_Cards_Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TST_Cards_Deck.h; path = Cards/TST_Cards_Deck.h; sourceTree = "<group>"; };
 		277E7E731713F5B2001E51CA /* TST_Cards_Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TST_Cards_Deck.m; path = Cards/TST_Cards_Deck.m; sourceTree = "<group>"; };
+		277E7E7617189D7C001E51CA /* sonar-project.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sonar-project.properties"; sourceTree = "<group>"; };
+		277E7E7817189FB6001E51CA /* pom.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pom.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 		277E7E1417132B94001E51CA = {
 			isa = PBXGroup;
 			children = (
+				277E7E7817189FB6001E51CA /* pom.xml */,
+				277E7E7617189D7C001E51CA /* sonar-project.properties */,
 				277E7E2617132B94001E51CA /* Sample */,
 				277E7E4D17132B95001E51CA /* SampleTests */,
 				277E7E1F17132B94001E51CA /* Frameworks */,
@@ -304,6 +310,8 @@
 				277E7E3717132B94001E51CA /* Default-568h@2x.png in Resources */,
 				277E7E3A17132B94001E51CA /* MainStoryboard_iPhone.storyboard in Resources */,
 				277E7E3D17132B94001E51CA /* MainStoryboard_iPad.storyboard in Resources */,
+				277E7E7717189D7D001E51CA /* sonar-project.properties in Resources */,
+				277E7E7917189FB6001E51CA /* pom.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +543,7 @@
 				277E7E5A17132B95001E51CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		277E7E5B17132B95001E51CA /* Build configuration list for PBXNativeTarget "SampleTests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +552,7 @@
 				277E7E5D17132B95001E51CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

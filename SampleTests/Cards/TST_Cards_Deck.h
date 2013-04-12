@@ -7,6 +7,5 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
-
 @interface TST_Cards_Deck : SenTestCase
 @end
