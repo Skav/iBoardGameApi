@@ -12,10 +12,12 @@
 @synthesize sCardId;
 
 -(id)initWithElementId:(NSString *)_sElementId andCardId:(NSString *)_sCardId{
+    DDLogVerbose(@"A new Card is created !");
     self = [super initWithElementId:_sElementId];
     if (self){
         self.sCardId = _sCardId;
     }
     return self;
 }
+
 @end
