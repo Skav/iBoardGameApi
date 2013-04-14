@@ -18,4 +18,5 @@
 // methods to randomly shuffle the elements.
 @interface NSMutableArray (Shuffling)
 - (void)shuffle;
+- (void)reverse;
 @end
