@@ -30,6 +30,15 @@
 		277E7E741713F5B2001E51CA /* TST_Cards_Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 277E7E731713F5B2001E51CA /* TST_Cards_Deck.m */; };
 		277E7E7717189D7D001E51CA /* sonar-project.properties in Resources */ = {isa = PBXBuildFile; fileRef = 277E7E7617189D7C001E51CA /* sonar-project.properties */; };
 		277E7E7917189FB6001E51CA /* pom.xml in Resources */ = {isa = PBXBuildFile; fileRef = 277E7E7817189FB6001E51CA /* pom.xml */; };
+		277E7E7C1719F6D5001E51CA /* NSArray_Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 277E7E7B1719F6D5001E51CA /* NSArray_Reverse.m */; };
+		277E7E8F171ABDB6001E51CA /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 277E7E80171ABDB6001E51CA /* DDAbstractDatabaseLogger.m */; };
+		277E7E90171ABDB6001E51CA /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 277E7E82171ABDB6001E51CA /* DDASLLogger.m */; };
+		277E7E91171ABDB6001E51CA /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 277E7E84171ABDB6001E51CA /* DDFileLogger.m */; };
+		277E7E92171ABDB6001E51CA /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 277E7E86171ABDB6001E51CA /* DDLog.m */; };
+		277E7E93171ABDB6001E51CA /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 277E7E88171ABDB6001E51CA /* DDTTYLogger.m */; };
+		277E7E94171ABDB6001E51CA /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 277E7E8B171ABDB6001E51CA /* ContextFilterLogFormatter.m */; };
+		277E7E95171ABDB6001E51CA /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 277E7E8D171ABDB6001E51CA /* DispatchQueueLogFormatter.m */; };
+		277E7E96171ABDB6001E51CA /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 277E7E8E171ABDB6001E51CA /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +86,23 @@
 		277E7E731713F5B2001E51CA /* TST_Cards_Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TST_Cards_Deck.m; path = Cards/TST_Cards_Deck.m; sourceTree = "<group>"; };
 		277E7E7617189D7C001E51CA /* sonar-project.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sonar-project.properties"; sourceTree = "<group>"; };
 		277E7E7817189FB6001E51CA /* pom.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pom.xml; sourceTree = "<group>"; };
+		277E7E7A1719F6D5001E51CA /* NSArray_Reverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArray_Reverse.h; sourceTree = "<group>"; };
+		277E7E7B1719F6D5001E51CA /* NSArray_Reverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArray_Reverse.m; sourceTree = "<group>"; };
+		277E7E7F171ABDB6001E51CA /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		277E7E80171ABDB6001E51CA /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		277E7E81171ABDB6001E51CA /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		277E7E82171ABDB6001E51CA /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		277E7E83171ABDB6001E51CA /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		277E7E84171ABDB6001E51CA /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		277E7E85171ABDB6001E51CA /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		277E7E86171ABDB6001E51CA /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		277E7E87171ABDB6001E51CA /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		277E7E88171ABDB6001E51CA /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		277E7E8A171ABDB6001E51CA /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		277E7E8B171ABDB6001E51CA /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		277E7E8C171ABDB6001E51CA /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		277E7E8D171ABDB6001E51CA /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		277E7E8E171ABDB6001E51CA /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +164,7 @@
 		277E7E2617132B94001E51CA /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				277E7E7D171ABB89001E51CA /* Logger */,
 				277E7E6B17134417001E51CA /* Helpers */,
 				277E7E5E17132BB8001E51CA /* Storyboard */,
 				277E7E2F17132B94001E51CA /* Sample_AppDelegate.h */,
@@ -219,6 +246,8 @@
 			children = (
 				277E7E6C171344B2001E51CA /* NSMutableArray_Shuffling.h */,
 				277E7E6D171344B2001E51CA /* NSMutableArray_Shuffling.m */,
+				277E7E7A1719F6D5001E51CA /* NSArray_Reverse.h */,
+				277E7E7B1719F6D5001E51CA /* NSArray_Reverse.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -230,6 +259,44 @@
 				277E7E731713F5B2001E51CA /* TST_Cards_Deck.m */,
 			);
 			name = Cards;
+			sourceTree = "<group>";
+		};
+		277E7E7D171ABB89001E51CA /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				277E7E7E171ABDB6001E51CA /* Lumberjack */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		277E7E7E171ABDB6001E51CA /* Lumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				277E7E7F171ABDB6001E51CA /* DDAbstractDatabaseLogger.h */,
+				277E7E80171ABDB6001E51CA /* DDAbstractDatabaseLogger.m */,
+				277E7E81171ABDB6001E51CA /* DDASLLogger.h */,
+				277E7E82171ABDB6001E51CA /* DDASLLogger.m */,
+				277E7E83171ABDB6001E51CA /* DDFileLogger.h */,
+				277E7E84171ABDB6001E51CA /* DDFileLogger.m */,
+				277E7E85171ABDB6001E51CA /* DDLog.h */,
+				277E7E86171ABDB6001E51CA /* DDLog.m */,
+				277E7E87171ABDB6001E51CA /* DDTTYLogger.h */,
+				277E7E88171ABDB6001E51CA /* DDTTYLogger.m */,
+				277E7E89171ABDB6001E51CA /* Extensions */,
+			);
+			path = Lumberjack;
+			sourceTree = "<group>";
+		};
+		277E7E89171ABDB6001E51CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				277E7E8A171ABDB6001E51CA /* ContextFilterLogFormatter.h */,
+				277E7E8B171ABDB6001E51CA /* ContextFilterLogFormatter.m */,
+				277E7E8C171ABDB6001E51CA /* DispatchQueueLogFormatter.h */,
+				277E7E8D171ABDB6001E51CA /* DispatchQueueLogFormatter.m */,
+				277E7E8E171ABDB6001E51CA /* README.txt */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +379,7 @@
 				277E7E3D17132B94001E51CA /* MainStoryboard_iPad.storyboard in Resources */,
 				277E7E7717189D7D001E51CA /* sonar-project.properties in Resources */,
 				277E7E7917189FB6001E51CA /* pom.xml in Resources */,
+				277E7E96171ABDB6001E51CA /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +421,14 @@
 				277E7E6717132FCA001E51CA /* Cards_Element.m in Sources */,
 				277E7E6A17133180001E51CA /* Cards_Deck.m in Sources */,
 				277E7E6E171344B2001E51CA /* NSMutableArray_Shuffling.m in Sources */,
+				277E7E7C1719F6D5001E51CA /* NSArray_Reverse.m in Sources */,
+				277E7E8F171ABDB6001E51CA /* DDAbstractDatabaseLogger.m in Sources */,
+				277E7E90171ABDB6001E51CA /* DDASLLogger.m in Sources */,
+				277E7E91171ABDB6001E51CA /* DDFileLogger.m in Sources */,
+				277E7E92171ABDB6001E51CA /* DDLog.m in Sources */,
+				277E7E93171ABDB6001E51CA /* DDTTYLogger.m in Sources */,
+				277E7E94171ABDB6001E51CA /* ContextFilterLogFormatter.m in Sources */,
+				277E7E95171ABDB6001E51CA /* DispatchQueueLogFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
